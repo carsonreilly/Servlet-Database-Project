@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Project4Home.html -->
+<html lang="en">
+<head>
+   <title>CNT 4714 Spring 2024</title>
+   <style type="text/css">
+    <!--
+        body {
+            background-color: black;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: xx-large;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        input {
+            font-size: xx-large;
+            border: 1px black solid;
+            box-shadow: 5px 5px 5px 2px black;
+        }
+        
+        p {
+            color: yellow;
+            text-align: center;
+        }
+        
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .top-container {
+            align-items: center;
+            height: 33.33%;
+        }
+        
+        .middle-container {
+            align-items: center;
+            height: 33.33%;
+        }
+        
+        .bottom-container {
+            align-items: center;
+            height: 33.33%;
+        }
+        
+        label {
+            color: yellow;
+        }
+        
+        .bright-green {
+            color: lime;
+        }
+        
+        .red {
+            color: red;
+        }
+
+        /* CSS for button */
+        input[type="submit"] {
+            background-color: darkgray; 
+            color: white;
+            font-size: xx-large;
+            border: 1px solid black;
+            padding: 10px;
+            cursor: pointer;
+        }
+    -->
+    </style>
+</head>
+<body>
+    <div class="container top-container">
+        <p>
+            <label style="color: yellow;">Welcome to the Spring 2024 Project 4 Enterprise System</label>
+        </p>
+        <p>
+            <label class="bright-green">A Servlet/JSP-based Multi-tiered Application Using A Tomcat Container</label>
+        </p>
+    </div>
+
+    <div class="container middle-container">
+        <p>
+            <label class="red">- User Authentication Page -</label>
+        </p>
+	<form action="authenticate" method="POST"> 
+        <p>
+        <label style="color: yellow;">UserName</label>
+        <input type = "text" name = "Username" />
+    </p>
+    <p>
+        <label style="color: yellow;">Password</label>
+        <input type = "text" name = "Password" />
+    </p>
+    <p>
+        <input type="submit" value="Click to Authenticate" style="color: lime; background-color: darkgray; cursor: pointer;" />
+    </p>
+</form>
+
+    </div>
+
+    <div class="container bottom-container">
+        <!-- Content for bottom third -->
+    </div>
+</body>
+</html>
